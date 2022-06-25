@@ -1,0 +1,31 @@
+{
+  "name": "node-ts-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start:dev": "nodemon -r tsconfig-paths/register ./src/index.ts",
+    "start:prod": "node -r ts-node/register/transpile-only -r tsconfig-paths/config ./dist/src/index.ts",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/dotenv-safe": "^8.1.2",
+    "@types/node": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.29.0",
+    "@typescript-eslint/parser": "^5.29.0",
+    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^3.1.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "nodemon": "^2.0.18",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.8.1",
+    "tsconfig-paths": "^4.0.0",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "dotenv-safe": "^8.2.0"
+  }
+}
